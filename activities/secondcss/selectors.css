@@ -1,0 +1,12 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main p{
+    color: rebeccapurple;
+}
+#two{
+    color: magenta;
+}
+.another{
+    font-size: x-large;
+}
