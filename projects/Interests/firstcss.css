@@ -1,0 +1,26 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:mediumvioletred;
+    font-weight: 500;
+    font-size: larger;
+    background-color: rgb(217, 215, 215);
+}
+footer,#first{
+    color:black;
+}
+nav, a{
+    color: red;
+}
+header{
+    font-style: oblique;
+}
+.start,#q1{
+    color:blue
+}
+span{
+    font-style: italic;
+}
+dd,#q2{
+    color:rgb(178, 84, 84);
+    font-weight: 100;
+}
