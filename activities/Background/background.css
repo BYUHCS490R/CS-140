@@ -1,0 +1,18 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: chartreuse;
+    background-image: url(background.jpg);
+    background-repeat: repeat;
+    background-color: gray;
+    /* background: url(background.jpg) repeat gray; */
+}
+
+header{
+    background-image: url(preview\ copy.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.mylist{
+    list-style-image: url(dot.png);
+}
