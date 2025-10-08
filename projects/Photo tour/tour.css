@@ -2,7 +2,6 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color:chartreuse;
     background: url(background.jpg) repeat gray;
-    background-repeat: repeat;
 }
 header{
     background-image: url(image.jpg);
