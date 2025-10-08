@@ -1,0 +1,25 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color:chartreuse;
+    background: url(background.jpg) repeat gray;
+    background-repeat: repeat-y;
+}
+header{
+    background-image: url(image.jpg);
+    background-position: right;
+    background-repeat: repeat;
+}
+.list{
+    list-style-image: url(dot.png);
+}
+.current{
+    color: yellow;
+    font-weight: bold;
+}
+.navlink{
+    color: white;
+}
+img{
+    max-width: 50%;
+    height: auto;
+}
