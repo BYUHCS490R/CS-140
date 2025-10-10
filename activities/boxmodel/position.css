@@ -1,0 +1,21 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: lightgray;
+    padding: 20px;
+    border-style: dotted;
+    border-color: magenta;
+    border-width: 5px;
+}
+header h1{
+    background-color: gray;
+}
+nav{
+    border-style:double;
+    padding:15px;
+}
+main h1{
+    border: thick dotted blue;
+    margin:60px
+}
