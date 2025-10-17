@@ -9,3 +9,10 @@ body{
 .parent p{
     background-color: lightgray;
 }
+#wrapper{
+    display:grid;
+    grid-template-areas:
+        "header header header"
+        "lside main rside"
+        "footer footer footer";
+}
