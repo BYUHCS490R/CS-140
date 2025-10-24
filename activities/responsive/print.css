@@ -1,0 +1,57 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin:0;
+}
+header{
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+header h1{
+    margin:0;
+}
+article{
+    font-family: 'Times New Roman', Times, serif;
+}
+nav{
+    display: none;
+}
+nav a{
+    display:block;
+    padding:10px;
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    border-radius: 15px;
+}
+nav a:hover{
+    background-color: lightgray;
+    color:red;
+}
+main{
+    margin:0;
+}
+.main-row{
+    display: flex;
+}
+.sidebar{
+    width:500px;
+    background-color: lightgray;
+}
+.sidebar h3{
+    margin:0;
+}
+.row{
+    display:flex;
+    flex-flow: row wrap;
+}
+.card{
+    border:thin solid black;
+    box-shadow: 3px 3px 5px gray;
+    width:25%;
+    margin:5px;
+}
+.card img{
+    width:100%;
+}
