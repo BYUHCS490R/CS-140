@@ -55,3 +55,17 @@ main{
 .card img{
     width:100%;
 }
+@media ONLY screen and (max-width:400px){
+    body{
+        background-color: pink;
+    }
+    nav{
+        flex-direction:column;
+    }
+    .sidebar{
+        display:none;
+    }
+    .main-card{
+        order:-1;
+    }
+}
