@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <header>
+        Kalanikau Web Design Site
+    </header>
+    <main>
+        <h1>Tables</h1>
+
+        <h3>When do you use a table?</h3>
+        <p>When we have table to display. Could be schedule or tasks or scoreboards.</p>
+
+        <h3>When do you not use a table?</h3>
+        <p>When the information is not tabular. For example, we don't use a table for layout or for lists of links.</p>
+
+        <h3>When do you need to do extra work for table accessibility?</h3>
+        <p>We need to label the rows when the cells are merged.</p>
+
+        <table border="1">
+            <caption>Class Schedule</caption>
+
+            <thead>
+                <tr>
+                    <th>Department</th>
+                    <th>Number</th>
+                    <th>Title</th>
+                    <th>Time</th>
+                    <th>Location</th>
+                    <th>Credits</th>
+                </tr>
+                <tr>
+                    <th colspan="6">Fall 2025</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>CS</td>
+                    <td>140</td>
+                    <td>Web Design</td>
+                    <td>11am MWF</td>
+                    <td>P3</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>REL</td>
+                    <td rowspan="2">275</td>
+                    <td>Book Of Mormon</td>
+                    <td>9am T-TH</td>
+                    <td>CH2C</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>REL</td>
+                    <td>Book Of Mormon</td>
+                    <td>9am T-TH</td>
+                    <td>CH2C</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+
+            <tfooter>
+                <tr>
+                    <th colspan="5" id="total-credits">Total Credits</th>
+                    <td headers="total-credits">12</td>
+                </tr>
+            </tfooter>
+        </table>
+    </main>
+    <footer>
+        <p>&copy;2025 Kalanikau Widiger</p>
+    </footer>
+</body>
+</html>
