@@ -1,3 +1,38 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+/*
+.schedule{
+    border:thin solid rebeccapurple;
+    border-spacing:10px;
+    border-collapse: separate;
+    width:80%;
+    margin:auto;
+    background-color: mediumturquoise;
+}
+.schedule th,td{
+    border: thick solid rebeccapurple;
+    padding: 5px;
+    background-color: lightskyblue;
+}
+.num{
+    vertical-align: top;
+}
+*/
+.schedule{
+    border-spacing:0;
+    border-collapse: collapse;
+    border-top:thin solid black;
+    border-bottom:thin solid black;
+}
+.schedule thead tr{
+    background-color: darkcyan;
+    color:white;
+}
+.schedule tfooter tr{
+    background-color: darkcyan;
+    color:white;
+}
+.schedule tbody tr:nth-child(odd){
+    background-color: lightgreen;
+}

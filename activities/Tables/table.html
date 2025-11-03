@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        Kalanikau Web Design Site
+        Kalanikau's Web Design Site
     </header>
     <main>
         <h1>Tables</h1>
@@ -22,7 +22,13 @@
         <h3>When do you need to do extra work for table accessibility?</h3>
         <p>We need to label the rows when the cells are merged.</p>
 
-        <table border="1">
+        <h3>Why don't we use the border attribute?</h3>
+        <p>Because it's obsolete in html so we should use css to style it instead.</p>
+
+        <h3>What is the easiest way to color every other row a different color?</h3>
+        <p></p>
+
+        <table class="schedule">
             <caption>Class Schedule</caption>
 
             <thead>
@@ -50,7 +56,7 @@
                 </tr>
                 <tr>
                     <td>REL</td>
-                    <td rowspan="2">275</td>
+                    <td rowspan="2" class="num">275</td>
                     <td>Book Of Mormon</td>
                     <td>9am T-TH</td>
                     <td>CH2C</td>
