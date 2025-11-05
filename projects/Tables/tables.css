@@ -1,0 +1,53 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:cornflowerblue;
+    margin:0;
+}
+header{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+nav{
+    background-color: #333;
+}
+nav a{
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+
+}
+nav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 15px;
+    float: right;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.results{
+    background-color: #e2e2e2;
+    border: thin solid black;
+}
+.results tr,th{
+    border-top:thin solid black;
+    padding:10px;
+}
+.results thead{
+    background-color: rgb(160, 159, 159);
+    color:white;
+}
+.results tbody tr:nth-child(odd){
+    background-color: lightgray;
+}
