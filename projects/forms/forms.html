@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <header>
+        <h1>Kalanikau's Web Design Site</h1>
+    </header>
+    <main>
+        <h1>Forms</h1>
+
+        <form action="formprocess.html" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <div class="form-row">
+                    <label for="fullname">Full name:</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+
+                <div class="form-row">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-row">
+                    <label for="date">Date Of Birth:</label>
+                    <input type="date" id="date" name="date">
+                </div>
+
+                <div class="check-row">
+                    <div class="spacer">Gender:</div>
+                    <label><input type="radio" name="gender" value="Male">Male</label>
+                    <label><input type="radio" name="gender" value="Female">Female</label>
+                </div>
+
+                <div class="form-row">
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <label for="country">Country:</label>
+                    <select id="country" name="country">
+                        <option value="">--Select your country--</option>
+                        <option value="usa">USA</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">UK</option>
+                        <option value="australia">Australia</option>
+                    </select>
+                </div>
+
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label><input type="checkbox">I agree to the terms</label>
+                </div>
+
+                <div class="form-row submit">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Submit">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;2025 Kalanikau Widiger</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,63 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+form{
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-row, .check-row{
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+.form-row label{
+    width: 150px;
+    text-align: right;
+}
+.form-row input[type=submit]{
+    padding: 10px 20px;
+    background-color: seagreen;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.form-row input:not([type=submit]),select,textarea{
+    background-color: linen;
+    padding: 5px;
+    border-radius: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: cornsilk;
+}
+.spacer{
+    width:150px;
+    text-align: right;
+}
+fieldset{
+    background-color: aliceblue;
+    border-radius: 6px;
+    padding: 15px;
+}
+legend{
+    font-weight: bold;
+    background-color: antiquewhite;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+@media ONLY screen AND (max-width:480px){
+    .form-row, .check-row{
+        flex-direction: column;
+    }
+    .form-row label, .spacer{
+        text-align: left;
+    }
+    .form-row input[type=submit]{
+        width: 100%;
+    }
+}
