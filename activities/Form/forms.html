@@ -18,37 +18,20 @@
     <main>
         <h1>Forms</h1>
 
-        <div>        
-            <h3>The form tag has an "action" attribute. What does it do?</h3>
-            <p>It specifies where to send the data when the form is submitted.</p>
-
-            <h3>The form tag has a "method" attribute. What does it do?</h3>
-            <p>It specifies the HTTP method (GET or POST) to be used when submitting the form data.</p>
-
-            <h3>What is the difference between a "POST" and a "GET"?</h3>
-            <p>With GET, the data will be displayed in the url; while post doesn't display the data in the url. POST=change, add, update, remove & GET=reading.</p>
-
-            <h3>What are different ways to style your form?</h3>
-            <p>Using CSS to style the form elements, layout, colors, fonts, and spacing.</p>
-
-            <h3>How does flex help for both Desktop and Mobile phones?</h3>
-            <p>Allows flexible layout.</p>
-        </div>
-
-        <form action="formprocess.html" method="post">
+        <form action="formprocess.html" method="post" id="myForm">
             <fieldset>
                 <legend>Sign Up</legend>
-                <div class="form-row">
-                    <label for="fname">Full Name: </label>
-                    <input type="text" name="fullname" placeholder="Full Name" id="fname">
+                <div class="form-row" id="fullname">
+                    <label for="fullname">Full Name: </label>
+                    <input type="text" name="fullname" placeholder="Full Name" id="fullname">
                 </div>
 
-                <div class="form-row">
+                <div class="form-row" id="email">
                     <label for="email">Email: </label>
                     <input type="email" name="email" id="email">
                 </div>
 
-                <div class="form-row">
+                <div class="form-row" id="pass">
                     <label for="pass">Password: </label>
                     <input type="password" name="pass" if="pass">
                     </div>
@@ -86,9 +69,64 @@
                 </div>
             </fieldset>
         </form>
+
+        <div>        
+            <h3>The form tag has an "action" attribute. What does it do?</h3>
+            <p>It specifies where to send the data when the form is submitted.</p>
+
+            <h3>The form tag has a "method" attribute. What does it do?</h3>
+            <p>It specifies the HTTP method (GET or POST) to be used when submitting the form data.</p>
+
+            <h3>What is the difference between a "POST" and a "GET"?</h3>
+            <p>With GET, the data will be displayed in the url; while post doesn't display the data in the url. POST=change, add, update, remove & GET=reading.</p>
+
+            <h3>What are different ways to style your form?</h3>
+            <p>Using CSS to style the form elements, layout, colors, fonts, and spacing.</p>
+
+            <h3>How does flex help for both Desktop and Mobile phones?</h3>
+            <p>Allows flexible layout.</p>
+
+            <h3>What is JavaScript? How did it get its name?</h3>
+            <p>Programming language that allows you to modify the html.</p>
+
+            <h3>What are the two ways you can run JavaScript?</h3>
+            <p>Client side and server side.</p>
+
+            <h3>What was the most popular front-end js library?</h3>
+            <p>jQuery</p>
+
+            <h3>What is the most popular front-end js library today?</h3>
+            <p>React</p>
+        </div>
+
+
     </main>
     <footer>
         <p>&copy;2025 Kalanikau Widiger</p>
     </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit',function(event){
+            event.preventDefault();
+
+            const fullname=document.getElementById('fullname').value;
+            const email=document.getElementById('email').value;
+            const password=document.getElementById('pass').value;
+
+            if (!fullname || !email){
+                alert("You need a name and email.");
+                return;
+            }
+
+            const formData={
+                name:fullname,
+                email:email,
+                password:password,
+            };
+
+            alert('Form submitted');
+
+            console.log(formData);
+        });
+    </script>
 </body>
 </html>
