@@ -17,23 +17,23 @@
     </header>
     <main>
         <h1>Forms</h1>
-
+        <div id="message"></div>
         <form action="formprocess.html" method="post" id="myForm">
             <fieldset>
                 <legend>Sign Up</legend>
-                <div class="form-row" id="fullname">
+                <div class="form-row">
                     <label for="fullname">Full Name: </label>
                     <input type="text" name="fullname" placeholder="Full Name" id="fullname">
                 </div>
 
-                <div class="form-row" id="email">
+                <div class="form-row">
                     <label for="email">Email: </label>
                     <input type="email" name="email" id="email">
                 </div>
 
-                <div class="form-row" id="pass">
+                <div class="form-row">
                     <label for="pass">Password: </label>
-                    <input type="password" name="pass" if="pass">
+                    <input type="password" name="pass" id="pass">
                     </div>
                 <div class="form-row">
                     <label for="state">State: </label>
@@ -48,14 +48,14 @@
                 </div>
 
                 <div class="check-row">
-                    <div class="spacer"></div>
-                    <label><input type="checkbox">I agree to the terms</label>
-                </div>
-
-                <div class="check-row">
                     <div class="spacer">Gender</div>
                     <label><input type="radio" name="gender" value="Male">Male</label>
                     <label><input type="radio" name="gender" value="Female">Female</label>
+                </div>
+
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label><input type="checkbox">I agree to the terms</label>
                 </div>
 
                 <div class="form-row">
@@ -97,36 +97,18 @@
 
             <h3>What is the most popular front-end js library today?</h3>
             <p>React</p>
-        </div>
 
+            <h3>What is AJAX?</h3>
+            <p>Allows webpages to be updated.</p>
+
+            <h3>Why do you put your JS Code in a separate file?</h3>
+            <p>To keep the code organized and easier to maintain.</p>
+        </div>
 
     </main>
     <footer>
         <p>&copy;2025 Kalanikau Widiger</p>
     </footer>
-    <script>
-        document.getElementById('myForm').addEventListener('submit',function(event){
-            event.preventDefault();
-
-            const fullname=document.getElementById('fullname').value;
-            const email=document.getElementById('email').value;
-            const password=document.getElementById('pass').value;
-
-            if (!fullname || !email){
-                alert("You need a name and email.");
-                return;
-            }
-
-            const formData={
-                name:fullname,
-                email:email,
-                password:password,
-            };
-
-            alert('Form submitted');
-
-            console.log(formData);
-        });
-    </script>
+    <script src="forms.js"></script>
 </body>
 </html>
