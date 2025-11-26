@@ -1,0 +1,10 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+form{
+    background-color: aliceblue;
+}
+.buttons{
+    background-color: lightgray;
+    padding-top: 5px;
+}
