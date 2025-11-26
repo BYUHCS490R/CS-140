@@ -1,0 +1,87 @@
+body{
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin:0;
+}
+header{
+    background-color: #c42700;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+header h1{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 36px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    color: white;
+    background-color: #333;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    display:block;
+}
+nav a:hover{
+    background-color: #555;
+}
+#current{
+    background-color: #777;
+}
+.aside{
+    background-color: #d4d4d4;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 20px;
+}
+.aside img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+#impact{
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.comparison{
+    background-color: #e2e2e2;
+    border-spacing:0;
+    border-collapse: collapse;
+    border-top:thin solid black;
+    border-bottom:thin solid black;
+}
+.comparison tr,th{
+    border:thin solid black;
+    padding:10px;
+}
+.comparison td{
+    text-align: center;
+}
+.comparison thead{
+    background-color: rgb(160, 159, 159);
+    color:white;
+}
+footer{
+    background-color: #c42700;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+@media ONLY screen and (max-width:500px){
+    nav{
+        flex-direction: column;
+    }
+}
