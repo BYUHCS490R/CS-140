@@ -88,13 +88,13 @@ main{
     border:thin solid black;
     border-radius: 10px;
     box-shadow: 3px 3px 5px gray;
-    width:30%;
+    width:40%;
     margin:20px;
 }
 .card img{
     border-radius: 10px;
     width:100%;
-    height:auto
+    height:auto;
 }
 .comparison{
     width:100%;

@@ -16,6 +16,11 @@ document.getElementById('myForm').addEventListener('submit',function(event){
         return;
     }
 
+    if(age<18){
+        alert("You must be at least 18 years old.");
+        return;
+    }
+
     const formData={
         name:fullname,
         email:email,
